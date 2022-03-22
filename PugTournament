@@ -1,0 +1,272 @@
+head
+  link(rel='Stylesheet', type='text/css', href='StyleT.css')
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+  meta(name='viewport', content='width=device-width,initial-scale=1.0')
+  link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Holtwood+One+SC', rel='stylesheet', type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff', rel='stylesheet', type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Abel', rel='stylesheet', type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700', rel='stylesheet', type='text/css')
+  title HCS NA Pro Series
+header.hero
+  .hero-wrap
+    p#intro.intro Halo Championship
+    h1#headline Pro Series
+    p.year
+      i.fa.fa-star
+      |  NA 
+      i.fa.fa-star
+    p 22/03 - 25-03
+section#bracket
+  .container
+    .split.split-one
+      .round.round-one.current
+        .round-details
+          | Round 1
+          br
+          span.date March 16
+        ul.matchup
+          li.team.team-top
+            | Duke
+            span.score 76
+          li.team.team-bottom
+            | Virginia
+            span.score 82
+        ul.matchup
+          li.team.team-top
+            | Wake Forest
+            span.score 64
+          li.team.team-bottom
+            | Clemson
+            span.score 56
+        ul.matchup
+          li.team.team-top
+            | North Carolina
+            span.score 68
+          li.team.team-bottom
+            | Florida State
+            span.score 54
+        ul.matchup
+          li.team.team-top
+            | NC State
+            span.score 74
+          li.team.team-bottom
+            | Maryland
+            span.score 92
+        ul.matchup
+          li.team.team-top
+            | Georgia Tech
+            span.score 78
+          li.team.team-bottom
+            | Georgia
+            span.score 80
+        ul.matchup
+          li.team.team-top
+            | Auburn
+            span.score 64
+          li.team.team-bottom
+            | Florida
+            span.score 63
+        ul.matchup
+          li.team.team-top
+            | Kentucky
+            span.score 70
+          li.team.team-bottom
+            | Alabama
+            span.score 59
+        ul.matchup
+          li.team.team-top
+            | Vanderbilt
+            span.score 64
+          li.team.team-bottom
+            | Gonzaga
+            span.score 68
+      // END ROUND ONE
+      .round.round-two
+        .round-details
+          | Round 2
+          br
+          span.date March 18
+        ul.matchup
+          li.team.team-top
+            span.score &nbsp;
+          li.team.team-bottom
+            span.score &nbsp;
+        ul.matchup
+          li.team.team-top
+            span.score &nbsp;
+          li.team.team-bottom
+            span.score &nbsp;
+        ul.matchup
+          li.team.team-top
+            span.score &nbsp;
+          li.team.team-bottom
+            span.score &nbsp;
+        ul.matchup
+          li.team.team-top
+            span.score &nbsp;
+          li.team.team-bottom
+            span.score &nbsp;
+      // END ROUND TWO
+      .round.round-three
+        .round-details
+          | Round 3
+          br
+          span.date March 22
+        ul.matchup
+          li.team.team-top
+            span.score &nbsp;
+          li.team.team-bottom
+            span.score &nbsp;
+        ul.matchup
+          li.team.team-top
+            span.score &nbsp;
+          li.team.team-bottom
+            span.score &nbsp;
+      // END ROUND THREE
+    .champion
+      .semis-l
+        .round-details
+          | west semifinals 
+          br
+          span.date March 26-28
+        ul.matchup.championship
+          li.team.team-top
+            span.vote-count &nbsp;
+          li.team.team-bottom
+            span.vote-count &nbsp;
+      .final
+        i.fa.fa-trophy
+        .round-details
+          | championship 
+          br
+          span.date March 30 - Apr. 1
+        ul.matchup.championship
+          li.team.team-top
+            span.vote-count &nbsp;
+          li.team.team-bottom
+            span.vote-count &nbsp;
+      .semis-r
+        .round-details
+          | east semifinals 
+          br
+          span.date March 26-28
+        ul.matchup.championship
+          li.team.team-top
+            span.vote-count &nbsp;
+          li.team.team-bottom
+            span.vote-count &nbsp;
+    .split.split-two
+      .round.round-three
+        .round-details
+          | Round 3
+          br
+          span.date March 22
+        ul.matchup
+          li.team.team-top
+            span.score &nbsp;
+          li.team.team-bottom
+            span.score &nbsp;
+        ul.matchup
+          li.team.team-top
+            span.score &nbsp;
+          li.team.team-bottom
+            span.score &nbsp;
+      // END ROUND THREE
+      .round.round-two
+        .round-details
+          | Round 2
+          br
+          span.date March 18
+        ul.matchup
+          li.team.team-top
+            span.score &nbsp;
+          li.team.team-bottom
+            span.score &nbsp;
+        ul.matchup
+          li.team.team-top
+            span.score &nbsp;
+          li.team.team-bottom
+            span.score &nbsp;
+        ul.matchup
+          li.team.team-top
+            span.score &nbsp;
+          li.team.team-bottom
+            span.score &nbsp;
+        ul.matchup
+          li.team.team-top
+            span.score &nbsp;
+          li.team.team-bottom
+            span.score &nbsp;
+      // END ROUND TWO
+      .round.round-one.current
+        .round-details
+          | Round 1
+          br
+          span.date March 16
+        ul.matchup
+          li.team.team-top
+            | Minnesota
+            span.score 62
+          li.team.team-bottom
+            | Northwestern
+            span.score 54
+        ul.matchup
+          li.team.team-top
+            | Michigan
+            span.score 68
+          li.team.team-bottom
+            | Iowa
+            span.score 66
+        ul.matchup
+          li.team.team-top
+            | Illinois
+            span.score 64
+          li.team.team-bottom
+            | Wisconsin
+            span.score 56
+        ul.matchup
+          li.team.team-top
+            | Purdue
+            span.score 36
+          li.team.team-bottom
+            | Boise State
+            span.score 40
+        ul.matchup
+          li.team.team-top
+            | Penn State
+            span.score 38
+          li.team.team-bottom
+            | Indiana
+            span.score 44
+        ul.matchup
+          li.team.team-top
+            | Ohio State
+            span.score 52
+          li.team.team-bottom
+            | VCU
+            span.score 80
+        ul.matchup
+          li.team.team-top
+            | USC
+            span.score 58
+          li.team.team-bottom
+            | Cal
+            span.score 59
+        ul.matchup
+          li.team.team-top
+            | Virginia Tech
+            span.score 74
+          li.team.team-bottom
+            | Dartmouth
+            span.score 111
+      // END ROUND ONE
+section.share
+  .share-wrap
+    a.share-icon(href='https://twitter.com/_joebeason')
+      i.fa.fa-twitter
+    a.share-icon(href='#')
+      i.fa.fa-facebook
+    a.share-icon(href='#')
+      i.fa.fa-envelope
