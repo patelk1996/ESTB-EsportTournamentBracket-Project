@@ -1,0 +1,16 @@
+doctype html
+head
+  title Login
+  link(rel='Stylesheet', type='text/css', href='StyleL.css')
+.loginbox
+  img.Avatar(src='Avatar.png')
+  h1 Login Here
+  form
+    p Username
+    input(type='text', name='', placeholder='Enter Username')
+    p Password
+    input(type='password', name='', placeholder='Enter Password')
+    input(type='Submit', name='', value='Login')
+    a(href='#') Forgotten your password?
+    br
+    a(href='#') Create Account
