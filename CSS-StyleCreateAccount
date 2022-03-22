@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-image: url(BackG.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.Sign-up-Form
+{ 
+    width: 300px;
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+    background: #fff;
+    padding: 20px;
+    margin: 10% auto 0;
+    text-align: center;
+}
+.Sign-up-Form h1
+{
+    color: #BF40BF;
+    margin-bottom: 30px;
+}
+.Input-Box
+{
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #BF40BF;
+    outline: none;
+}
+button
+{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sign-btn
+{
+    background-color: #BF40BF;
+}
+.GGL-btn
+{
+    background-color: #BF40BF;
+}
+a
+{
+    text-decoration: none;
+}
+hr
+{
+    margin-top: 20px;
+    width: 80px;
+}
+.or
+{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+}
+.img
+{
+    width: 1px;
+    margin-top: -50px;
+}
