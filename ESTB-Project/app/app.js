@@ -10,15 +10,36 @@ app.use(express.static("static"));
 // Get the functions in the db.js file to use
 const db = require('./services/db');
 
+// Use the Pug templating engine
+app.set('view engine', 'pug');
+app.set('views', './app/views');
+
+
 // Create a route for root - /
 app.get("/", function(req, res) {
     res.send("Hello world!");
 });
 
+
+// Create a route for root for tournament- /
+app.get("/tournament", function(req, res) {
+    res.render("tournament");
+});
+
+// Create a route for root for login- /
+app.get("/login", function(req, res) {
+    res.render("login");
+});
+
+// Create a route for root for createaccount- /
+app.get("/createaccount", function(req, res) {
+    res.render("createaccount");
+});
+
 // Create a route for testing the db
 app.get("/db_test", function(req, res) {
     // Assumes a table called test_table exists in your database
-    sql = 'select * from test_table';
+    sql = 'select * from teams';
     db.query(sql).then(results => {
         console.log(results);
         res.send(results)
