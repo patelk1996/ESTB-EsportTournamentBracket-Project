@@ -1,0 +1,21 @@
+doctype html
+head
+  title Create Account
+  link(rel='stylesheet', href='StyleC.css')
+.Sign-up-Form
+  img(src='AV4.png')
+  h1 Sign Up Now
+  form
+    input.Input-Box(type='Email', placeholder='Your Email')
+    input.Input-Box(type='password', placeholder='Your Password')
+    p
+      span
+        input(type='Checkbox')
+      |  I agree to the Terms of Services
+    button.sign-btn(type='button') Sign Up
+    hr
+    p.or OR
+    button.GGL-btn(type='button') Login With Google
+    p
+      | Do you have an Account? 
+      a(href='#') Sign-In
