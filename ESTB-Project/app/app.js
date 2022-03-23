@@ -14,16 +14,27 @@ const db = require('./services/db');
 app.set('view engine', 'pug');
 app.set('views', './app/views');
 
+// Get tournament Model
+const{Tournament}=require("./models/tournament");
 
 // Create a route for root - /
 app.get("/", function(req, res) {
-    res.send("Hello world!");
+    res.send("Hello to the Game World!");
 });
 
+app.get("/gametemplate", function(req, res) {
+    res.render("gametemplate");
+});
 
 // Create a route for root for tournament- /
-app.get("/tournament", function(req, res) {
-    res.render("tournament");
+app.get("/tournament/:tournament_id", async function(req, res) {
+    var tmId = req.params.tournament_id;
+    // Create a tournament class with the ID passed
+    var tournament = new Tournament(tmId);
+    await tournament.getTournamentDetails();
+    //await tournament.getTournamentTeams();
+    res.render('tournament', {tournament:tournament});
+      
 });
 
 // Create a route for root for login- /

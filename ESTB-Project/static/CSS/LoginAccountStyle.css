@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url("./images/BackG.jpg");
+    background: url("BackG.jpg");
     background-size: cover;
     background-position: center;
     font-family: monospace;

@@ -8,20 +8,17 @@ head
   link(href='https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff', rel='stylesheet', type='text/css')
   link(href='https://fonts.googleapis.com/css?family=Abel', rel='stylesheet', type='text/css')
   link(href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700', rel='stylesheet', type='text/css')
-  title #{tournament.tournament_name} 
+  title HCS NA Pro Series
 header.hero
   .hero-wrap
-    h1#headline #{tournament.tournament_name} 
-    
-    
-    - console.log(tournament)
-
+    p#intro.intro Halo Championship
+    h1#headline Pro Series
+   
     p.year
+      
       i.fa.fa-star
-      | #{tournament.tournament_id} 
+      | 23 march 
       i.fa.fa-star
-    p #{tournament.tournament_data}
-    
 
 section#bracket
   .container
