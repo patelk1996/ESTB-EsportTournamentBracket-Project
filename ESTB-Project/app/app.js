@@ -1,11 +1,16 @@
 // Import express.js
 const express = require("express");
+//const path=require('path');
+//const tournamentcss= './CSS/TournamentStyle.css'
 
 // Create express app
 var app = express();
 
+//app.use(express.static(__dirname + '/CSS/'));
 // Add static files location
-app.use(express.static("static"));
+app.use(express.static('static'));
+
+//path.basename(tournamentcss)
 
 // Get the functions in the db.js file to use
 const db = require('./services/db');
