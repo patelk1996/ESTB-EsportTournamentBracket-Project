@@ -14,8 +14,10 @@
     "express": "^4.17.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.0",
+    "node-datetime": "^2.1.2",
     "pug": "^3.0.2",
     "sqlite3": "^5.0.2",
-    "supervisor": "^0.12.0"
+    "supervisor": "^0.12.0",
+    "vue-tournament-bracket": "^2.1.4"
   }
 }

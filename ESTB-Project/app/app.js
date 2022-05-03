@@ -31,13 +31,22 @@ app.get("/gametemplate", function(req, res) {
     res.render("gametemplate");
 });
 
+//Dashboard 
+app.get("/dashboard", function(req, res) {
+    res.render("dashboard");
+});
+
 // Create a route for root for tournament- /
 app.get("/tournament/:tournament_id", async function(req, res) {
     var tmId = req.params.tournament_id;
     // Create a tournament class with the ID passed
     var tournament = new Tournament(tmId);
     await tournament.getTournamentDetails();
-    //await tournament.getTournamentTeams();
+    await tournament.getTournamentTeams();
+    await tournament.getTournamentTeamsWins();
+    await tournament.getTournamentTeamsWinsSemiFinal();
+    await tournament.getTournamentTeamsWinsFinal();
+    console.log("tournaments: ",tournament);
     res.render('tournament', {tournament:tournament});
       
 });

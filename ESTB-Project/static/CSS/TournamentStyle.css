@@ -19,7 +19,7 @@ body {font-family: 'Istok Web', sans-serif;background: url("http://picjumbo.com/
 .team {padding: 0 5px;margin: 3px 0;height: 25px; line-height: 25px;white-space: nowrap; overflow: hidden;position: relative;}
 .round-two .matchup {margin:0; height: 60px;padding: 50px 0;}
 .round-three .matchup {margin:0; height: 60px; padding: 130px 0;}
-.round-details {font-family: 'Roboto Condensed', sans-serif; font-size: 13px; color: #CF9FFF;text-transform: uppercase;text-align: center;height: 40px;}
+.round-details {font-family: 'Roboto Condensed', sans-serif; font-size: 13px; color: #18032c;text-transform: uppercase;text-align: center;height: 40px;}
 .champion li, .round li {background-color: #fff;box-shadow: none; opacity: 0.45;}
 .current li {opacity: 1;}
 .current li.team {background-color: #fff;box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);opacity: 1;}
