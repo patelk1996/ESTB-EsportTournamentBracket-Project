@@ -51,9 +51,66 @@ app.get("/tournament/:tournament_id", async function(req, res) {
       
 });
 
+
 // Create a route for root for login- /
 app.get("/login", function(req, res) {
     res.render("login");
+});
+
+app.post('/set-password', async function (req, res) {
+    params = req.body;
+    var user = new User(params.email);
+    try {
+        uId = await user.getIdFromEmail();
+        if (user_id) {
+            // If a valid, existing user is found, set the password and redirect to the tournament
+            await user.setUserPassword(params.password);
+            res.redirect('/tournament/' + tournament_id);
+        }
+        else {
+            // If no existing user is found, add a new one
+            newId = await user.addUser(params.email);
+            res.send('Perhaps a page where a new user sets a programme would be good here');
+        }
+    } catch (err) {
+        console.error(`Error while adding password `, err.message);
+    }
+});
+
+
+// Create a route for root for createaccount- /
+app.get("/createaccount", function(req, res) {
+    res.render("createaccount");
+});
+
+
+app.post('/authenticate', async function (req, res) {
+    params = req.body;
+    var user = new User(params.email);
+    try {
+        user_id = await user.getIdFromEmail();
+        if (user_id) {
+            match = await user.authenticate(params.password);
+            if (match) {
+                res.redirect('/tournament/1/' + user_id);
+            }
+            else {
+                // TODO improve the user journey here
+                res.send('invalid password');
+            }
+        }
+        else {
+            res.send('invalid email');
+        }
+    } catch (err) {
+        console.error('Error while comparing', err.message);
+    }
+});
+
+// Logout
+app.get('/logout', function (req, res) {
+    req.session.destroy();
+    res.redirect('/login');
 });
 
 // Create a route for root for createaccount- /
